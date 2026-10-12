@@ -21,7 +21,7 @@ jobs:
           echo ::group::Archive artifact
           tar \
             --dereference --hard-dereference \
-            --directory "_site/" \
+            --directory ./ \
             -cvf "$RUNNER_TEMP/artifact.tar" \
             --exclude=.git \
             --exclude=.github \
